@@ -157,7 +157,7 @@ int main(void)
 	{
 		// update IMU data
 		Get_Angle();
-
+		Check_Bluetooth();
 		// Calculate PWM
 		Balance_Pwm = balance(Angle_Balance, Gyro_Balance);
 		Velocity_Pwm = velocity(Encoder_Left, Encoder_Right);
